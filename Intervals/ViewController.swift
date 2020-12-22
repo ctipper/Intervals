@@ -5,7 +5,7 @@
 //  Created by Christopher on 13-12-2020.
 //
 
-import Cocoa
+import AppKit
 
 class ViewController: NSViewController {
 
