@@ -21,13 +21,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         mainMenu.addItem(appMenu)
         NSApplication.shared.mainMenu = mainMenu
         
-        let size = CGSize(width: 480, height: 270)
+        let size = CGSize(width: 480, height: 480)
         window.setContentSize(size)
         window.styleMask = [.closable, .miniaturizable, .resizable, .titled]
         window.delegate = windowDelegate
         window.title = "Intervals"
         
-        let view = NSHostingView(rootView: HelloView())
+        let view = NSHostingView(rootView: IntervalView())
         view.frame = CGRect(origin: .zero, size: size)
         view.autoresizingMask = [.height, .width]
         window.contentView!.addSubview(view)

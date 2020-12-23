@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7BBDD2782587E4F20007B711 /* WindowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDD2772587E4F20007B711 /* WindowDelegate.swift */; };
-		7BBDD27D2587E5330007B711 /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDD27C2587E5330007B711 /* HelloView.swift */; };
+		7BBDD27D2587E5330007B711 /* IntervalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDD27C2587E5330007B711 /* IntervalView.swift */; };
 		7BBDD2822587E5A40007B711 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDD2812587E5A40007B711 /* main.swift */; };
 		7BE00E752586221C008815F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE00E742586221C008815F1 /* AppDelegate.swift */; };
 		7BE00E772586221C008815F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE00E762586221C008815F1 /* ViewController.swift */; };
@@ -37,7 +37,7 @@
 
 /* Begin PBXFileReference section */
 		7BBDD2772587E4F20007B711 /* WindowDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowDelegate.swift; sourceTree = "<group>"; };
-		7BBDD27C2587E5330007B711 /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
+		7BBDD27C2587E5330007B711 /* IntervalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalView.swift; sourceTree = "<group>"; };
 		7BBDD2812587E5A40007B711 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		7BE00E712586221C008815F1 /* Intervals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intervals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE00E742586221C008815F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 			children = (
 				7BE00E742586221C008815F1 /* AppDelegate.swift */,
 				7BBDD2812587E5A40007B711 /* main.swift */,
-				7BBDD27C2587E5330007B711 /* HelloView.swift */,
+				7BBDD27C2587E5330007B711 /* IntervalView.swift */,
 				7BBDD2772587E4F20007B711 /* WindowDelegate.swift */,
 				7BE00E762586221C008815F1 /* ViewController.swift */,
 				7BE00E782586221D008815F1 /* Assets.xcassets */,
@@ -264,7 +264,7 @@
 			files = (
 				7BBDD2782587E4F20007B711 /* WindowDelegate.swift in Sources */,
 				7BBDD2822587E5A40007B711 /* main.swift in Sources */,
-				7BBDD27D2587E5330007B711 /* HelloView.swift in Sources */,
+				7BBDD27D2587E5330007B711 /* IntervalView.swift in Sources */,
 				7BE00E772586221C008815F1 /* ViewController.swift in Sources */,
 				7BE00E752586221C008815F1 /* AppDelegate.swift in Sources */,
 			);
