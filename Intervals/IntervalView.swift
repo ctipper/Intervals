@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct IntervalView: View {
-    @State private var start = Date(dateString: "2020-12-10")
-    @State private var end = Date(dateString: "2021-01-01")
+    @State private var start = Date()
+    @State private var end = Date().addingTimeInterval(3600 * 24 * 8)
     @State private var text = String()
     
     var body: some View {
