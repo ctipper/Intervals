@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B509F782E1AC7D70025FF23 /* IntervalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B509F772E1AC7D70025FF23 /* IntervalView.swift */; };
 		7B8146AB25AF591A009CBB19 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8146AA25AF591A009CBB19 /* Date.swift */; };
 		7BBDD2782587E4F20007B711 /* WindowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDD2772587E4F20007B711 /* WindowDelegate.swift */; };
-		7BBDD27D2587E5330007B711 /* IntervalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDD27C2587E5330007B711 /* IntervalView.swift */; };
+		7BBDD27D2587E5330007B711 /* DurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDD27C2587E5330007B711 /* DurationView.swift */; };
 		7BBDD2822587E5A40007B711 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDD2812587E5A40007B711 /* main.swift */; };
 		7BE00E752586221C008815F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE00E742586221C008815F1 /* AppDelegate.swift */; };
 		7BE00E772586221C008815F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE00E762586221C008815F1 /* ViewController.swift */; };
@@ -37,9 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B509F772E1AC7D70025FF23 /* IntervalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalView.swift; sourceTree = "<group>"; };
 		7B8146AA25AF591A009CBB19 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		7BBDD2772587E4F20007B711 /* WindowDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowDelegate.swift; sourceTree = "<group>"; };
-		7BBDD27C2587E5330007B711 /* IntervalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalView.swift; sourceTree = "<group>"; };
+		7BBDD27C2587E5330007B711 /* DurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationView.swift; sourceTree = "<group>"; };
 		7BBDD2812587E5A40007B711 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		7BE00E712586221C008815F1 /* Intervals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intervals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE00E742586221C008815F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,8 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				7BE00E742586221C008815F1 /* AppDelegate.swift */,
+				7B509F772E1AC7D70025FF23 /* IntervalView.swift */,
 				7BBDD2812587E5A40007B711 /* main.swift */,
-				7BBDD27C2587E5330007B711 /* IntervalView.swift */,
+				7BBDD27C2587E5330007B711 /* DurationView.swift */,
 				7B8146AA25AF591A009CBB19 /* Date.swift */,
 				7BBDD2772587E4F20007B711 /* WindowDelegate.swift */,
 				7BE00E762586221C008815F1 /* ViewController.swift */,
@@ -268,7 +271,8 @@
 				7BBDD2782587E4F20007B711 /* WindowDelegate.swift in Sources */,
 				7B8146AB25AF591A009CBB19 /* Date.swift in Sources */,
 				7BBDD2822587E5A40007B711 /* main.swift in Sources */,
-				7BBDD27D2587E5330007B711 /* IntervalView.swift in Sources */,
+				7BBDD27D2587E5330007B711 /* DurationView.swift in Sources */,
+				7B509F782E1AC7D70025FF23 /* IntervalView.swift in Sources */,
 				7BE00E772586221C008815F1 /* ViewController.swift in Sources */,
 				7BE00E752586221C008815F1 /* AppDelegate.swift in Sources */,
 			);
@@ -368,7 +372,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -423,7 +427,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;

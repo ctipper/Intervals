@@ -10,30 +10,34 @@ import SwiftUI
 
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    let window = NSWindow()
+    var window: NSWindow!
     let windowDelegate = WindowDelegate()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+        // Setup menu
         let appMenu = NSMenuItem()
         appMenu.submenu = NSMenu()
         appMenu.submenu?.addItem(NSMenuItem(title: "Quit", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
         let mainMenu = NSMenu(title: "Intervals")
         mainMenu.addItem(appMenu)
         NSApplication.shared.mainMenu = mainMenu
-        
-        let size = CGSize(width: 480, height: 480)
-        window.setContentSize(size)
-        window.styleMask = [.closable, .miniaturizable, .resizable, .titled]
-        window.delegate = windowDelegate
+
+        // Create the SwiftUI content view
+        let contentView = DurationView()
+
+        // Create the window
+        let hostingController = NSHostingController(rootView: contentView)
+        window = NSWindow(
+            contentViewController: hostingController
+        )
+        window.setContentSize(NSSize(width: 480, height: 600)) // Increased size
+        window.styleMask = [.titled, .closable, .resizable, .miniaturizable]
         window.title = "Intervals"
-        
-        let view = NSHostingView(rootView: IntervalView())
-        view.frame = CGRect(origin: .zero, size: size)
-        view.autoresizingMask = [.height, .width]
-        window.contentView!.addSubview(view)
+        window.delegate = windowDelegate
         window.center()
-        window.makeKeyAndOrderFront(window)
-        
+        window.makeKeyAndOrderFront(nil)
+
+        // Activate the app
         NSApp.setActivationPolicy(.regular)
         NSApp.activate(ignoringOtherApps: true)
     }
@@ -41,7 +45,4 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationWillTerminate(_ aNotification: Notification) {
         // Insert code here to tear down your application
     }
-
-
 }
-
