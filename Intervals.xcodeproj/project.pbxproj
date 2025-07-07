@@ -49,7 +49,6 @@
 		7BE00E782586221D008815F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7BE00E7B2586221D008815F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BE00E7D2586221D008815F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7BE00E7E2586221D008815F1 /* Intervals.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Intervals.entitlements; sourceTree = "<group>"; };
 		7BE00E832586221D008815F1 /* IntervalsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntervalsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE00E872586221D008815F1 /* IntervalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalsTests.swift; sourceTree = "<group>"; };
 		7BE00E892586221D008815F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -116,7 +115,6 @@
 				7BE00E782586221D008815F1 /* Assets.xcassets */,
 				7BE00E7A2586221D008815F1 /* Main.storyboard */,
 				7BE00E7D2586221D008815F1 /* Info.plist */,
-				7BE00E7E2586221D008815F1 /* Intervals.entitlements */,
 			);
 			path = Intervals;
 			sourceTree = "<group>";
