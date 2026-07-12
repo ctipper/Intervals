@@ -12,13 +12,10 @@
 		7B55C524300410BB00C3513E /* IntervalsAppIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B55C523300410BB00C3513E /* IntervalsAppIntents.swift */; };
 		7B55C526300411A400C3513E /* IntervalCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B55C525300411A400C3513E /* IntervalCalculatorTests.swift */; };
 		7B8146AB25AF591A009CBB19 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8146AA25AF591A009CBB19 /* Date.swift */; };
-		7BBDD2782587E4F20007B711 /* WindowDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDD2772587E4F20007B711 /* WindowDelegate.swift */; };
 		7BBDD27D2587E5330007B711 /* DurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDD27C2587E5330007B711 /* DurationView.swift */; };
-		7BBDD2822587E5A40007B711 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDD2812587E5A40007B711 /* main.swift */; };
+		7BCEF80130041B6200F11ACE /* IntervalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCEF80030041B6200F11ACE /* IntervalsApp.swift */; };
 		7BE00E752586221C008815F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE00E742586221C008815F1 /* AppDelegate.swift */; };
-		7BE00E772586221C008815F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE00E762586221C008815F1 /* ViewController.swift */; };
 		7BE00E792586221D008815F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BE00E782586221D008815F1 /* Assets.xcassets */; };
-		7BE00E7C2586221D008815F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BE00E7A2586221D008815F1 /* Main.storyboard */; };
 		7BE00E882586221D008815F1 /* IntervalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE00E872586221D008815F1 /* IntervalsTests.swift */; };
 		7BE00E932586221D008815F1 /* IntervalsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE00E922586221D008815F1 /* IntervalsUITests.swift */; };
 /* End PBXBuildFile section */
@@ -46,14 +43,11 @@
 		7B55C523300410BB00C3513E /* IntervalsAppIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalsAppIntents.swift; sourceTree = "<group>"; };
 		7B55C525300411A400C3513E /* IntervalCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalCalculatorTests.swift; sourceTree = "<group>"; };
 		7B8146AA25AF591A009CBB19 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
-		7BBDD2772587E4F20007B711 /* WindowDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowDelegate.swift; sourceTree = "<group>"; };
 		7BBDD27C2587E5330007B711 /* DurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationView.swift; sourceTree = "<group>"; };
-		7BBDD2812587E5A40007B711 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7BCEF80030041B6200F11ACE /* IntervalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalsApp.swift; sourceTree = "<group>"; };
 		7BE00E712586221C008815F1 /* Intervals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Intervals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE00E742586221C008815F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7BE00E762586221C008815F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7BE00E782586221D008815F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7BE00E7B2586221D008815F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7BE00E7D2586221D008815F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BE00E832586221D008815F1 /* IntervalsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntervalsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BE00E872586221D008815F1 /* IntervalsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalsTests.swift; sourceTree = "<group>"; };
@@ -113,16 +107,13 @@
 			children = (
 				7BE00E742586221C008815F1 /* AppDelegate.swift */,
 				7B509F772E1AC7D70025FF23 /* IntervalView.swift */,
-				7BBDD2812587E5A40007B711 /* main.swift */,
 				7BBDD27C2587E5330007B711 /* DurationView.swift */,
 				7B8146AA25AF591A009CBB19 /* Date.swift */,
-				7BBDD2772587E4F20007B711 /* WindowDelegate.swift */,
-				7BE00E762586221C008815F1 /* ViewController.swift */,
 				7BE00E782586221D008815F1 /* Assets.xcassets */,
-				7BE00E7A2586221D008815F1 /* Main.storyboard */,
 				7BE00E7D2586221D008815F1 /* Info.plist */,
 				7B55C521300410B100C3513E /* IntervalCalculator.swift */,
 				7B55C523300410BB00C3513E /* IntervalsAppIntents.swift */,
+				7BCEF80030041B6200F11ACE /* IntervalsApp.swift */,
 			);
 			path = Intervals;
 			sourceTree = "<group>";
@@ -250,7 +241,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BE00E792586221D008815F1 /* Assets.xcassets in Resources */,
-				7BE00E7C2586221D008815F1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,14 +265,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BBDD2782587E4F20007B711 /* WindowDelegate.swift in Sources */,
 				7B8146AB25AF591A009CBB19 /* Date.swift in Sources */,
 				7B55C522300410B100C3513E /* IntervalCalculator.swift in Sources */,
-				7BBDD2822587E5A40007B711 /* main.swift in Sources */,
 				7B55C524300410BB00C3513E /* IntervalsAppIntents.swift in Sources */,
 				7BBDD27D2587E5330007B711 /* DurationView.swift in Sources */,
 				7B509F782E1AC7D70025FF23 /* IntervalView.swift in Sources */,
-				7BE00E772586221C008815F1 /* ViewController.swift in Sources */,
+				7BCEF80130041B6200F11ACE /* IntervalsApp.swift in Sources */,
 				7BE00E752586221C008815F1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,17 +306,6 @@
 			targetProxy = 7BE00E8F2586221D008815F1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		7BE00E7A2586221D008815F1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7BE00E7B2586221D008815F1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		7BE00E952586221D008815F1 /* Debug */ = {
