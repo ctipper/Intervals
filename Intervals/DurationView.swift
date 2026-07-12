@@ -24,12 +24,13 @@ struct DurationView: View {
                 .padding()
                 .labelsHidden()
 
-                Text("\((end - start).week!) weeks \((end - start).day! - ((end - start).week!) * 7) days")
+                let duration = IntervalCalculator.duration(from: start, to: end)
+                Text("\(duration.weeks) weeks \(duration.remainderDays) days")
                     .font(.title2)
-                Text("\((end - start).day!) days").font(.title2)
-                Text("\(((end - start).day!) * 24) hours").font(.title2)
-                Text("\(Date.workDays(end, start)!) work days").font(.title2)
-                Text("\(Date.holiDays(end, start)!) non-working days").font(.title2)
+                Text("\(duration.totalDays) days").font(.title2)
+                Text("\(duration.hours) hours").font(.title2)
+                Text("\(duration.workDays) work days").font(.title2)
+                Text("\(duration.nonWorkingDays) non-working days").font(.title2)
 
                 DatePicker(
                     "End Date",
