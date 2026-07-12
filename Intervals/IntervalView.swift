@@ -2,11 +2,11 @@ import SwiftUI
 
 struct IntervalView: View {
     @State private var start = Date()
-    @State private var period = "Days"
+    @State private var period: IntervalPeriod = .days
     @State private var intervalValue = "1"
     @State private var end = Date()
 
-    let periods = ["Days", "Weeks", "Months", "Years"]
+    let periods = IntervalPeriod.allCases
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
@@ -27,7 +27,7 @@ struct IntervalView: View {
 
                 Picker("Period", selection: $period) {
                     ForEach(periods, id: \.self) { option in
-                        Text(option)
+                        Text(option.rawValue).tag(option)
                     }
                 }
                 .pickerStyle(SegmentedPickerStyle())
@@ -47,31 +47,13 @@ struct IntervalView: View {
         .onAppear {
             updateEndDate()
         }
-        .onChange(of: start, perform: { _ in updateEndDate() })
-        .onChange(of: period, perform: { _ in updateEndDate() })
-        .onChange(of: intervalValue, perform: { _ in updateEndDate() })
+        .onChange(of: start) { updateEndDate() }
+        .onChange(of: period) { updateEndDate() }
+        .onChange(of: intervalValue) { updateEndDate() }
     }
 
     private func updateEndDate() {
         guard let intervalInt = Int(intervalValue) else { return }
-
-        var component = DateComponents()
-
-        switch period {
-        case "Days":
-            component.day = intervalInt
-        case "Weeks":
-            component.weekOfYear = intervalInt
-        case "Months":
-            component.month = intervalInt
-        case "Years":
-            component.year = intervalInt
-        default:
-            break
-        }
-
-        if let calculated = Calendar.current.date(byAdding: component, to: start) {
-            end = calculated
-        }
+        end = IntervalCalculator.endDate(from: start, amount: intervalInt, period: period)
     }
 }
