@@ -1,8 +1,10 @@
 //
-//  IntervalsAppIntents.swift
-//  Intervals
+//  IntervalsIntents.swift
+//  IntervalsIntents
 //
-//  App Intents exposing the calculators to Shortcuts and Spotlight.
+//  App Intents hosted in the App Intents Extension. Living here means the
+//  intents run out-of-process (headless) when invoked from Shortcuts,
+//  Spotlight or Siri — the main Intervals app is never launched.
 //
 
 import AppIntents
