@@ -3,14 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		7B509F782E1AC7D70025FF23 /* IntervalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B509F772E1AC7D70025FF23 /* IntervalView.swift */; };
 		7B55C522300410B100C3513E /* IntervalCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B55C521300410B100C3513E /* IntervalCalculator.swift */; };
-		7B55C524300410BB00C3513E /* IntervalsAppIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B55C523300410BB00C3513E /* IntervalsAppIntents.swift */; };
 		7B55C526300411A400C3513E /* IntervalCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B55C525300411A400C3513E /* IntervalCalculatorTests.swift */; };
+		7B77AE443004DE5800EEB50D /* IntervalsIntents.appex in Embed ExtensionKit Extensions */ = {isa = PBXBuildFile; fileRef = 7B77AE3B3004DE5800EEB50D /* IntervalsIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7B77AE4A3004DFFF00EEB50D /* IntervalCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B55C521300410B100C3513E /* IntervalCalculator.swift */; };
+		7B77AE4B3004E08D00EEB50D /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8146AA25AF591A009CBB19 /* Date.swift */; };
 		7B8146AB25AF591A009CBB19 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8146AA25AF591A009CBB19 /* Date.swift */; };
 		7BBDD27D2587E5330007B711 /* DurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBDD27C2587E5330007B711 /* DurationView.swift */; };
 		7BCEF80130041B6200F11ACE /* IntervalsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCEF80030041B6200F11ACE /* IntervalsApp.swift */; };
@@ -21,6 +23,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7B77AE423004DE5800EEB50D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BE00E692586221C008815F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B77AE3A3004DE5800EEB50D;
+			remoteInfo = Extension;
+		};
 		7BE00E842586221D008815F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 7BE00E692586221C008815F1 /* Project object */;
@@ -37,11 +46,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7B77AE493004DE5800EEB50D /* Embed ExtensionKit Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(EXTENSIONS_FOLDER_PATH)";
+			dstSubfolderSpec = 16;
+			files = (
+				7B77AE443004DE5800EEB50D /* IntervalsIntents.appex in Embed ExtensionKit Extensions */,
+			);
+			name = "Embed ExtensionKit Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		7B509F772E1AC7D70025FF23 /* IntervalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalView.swift; sourceTree = "<group>"; };
 		7B55C521300410B100C3513E /* IntervalCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalCalculator.swift; sourceTree = "<group>"; };
-		7B55C523300410BB00C3513E /* IntervalsAppIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalsAppIntents.swift; sourceTree = "<group>"; };
 		7B55C525300411A400C3513E /* IntervalCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalCalculatorTests.swift; sourceTree = "<group>"; };
+		7B77AE3B3004DE5800EEB50D /* IntervalsIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.extensionkit-extension"; includeInIndex = 0; path = IntervalsIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B8146AA25AF591A009CBB19 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		7BBDD27C2587E5330007B711 /* DurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationView.swift; sourceTree = "<group>"; };
 		7BCEF80030041B6200F11ACE /* IntervalsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntervalsApp.swift; sourceTree = "<group>"; };
@@ -57,7 +80,28 @@
 		7BE00E942586221D008815F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		7B77AE453004DE5800EEB50D /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 7B77AE3A3004DE5800EEB50D /* IntervalsIntents */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		7B77AE3C3004DE5800EEB50D /* IntervalsIntents */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (7B77AE453004DE5800EEB50D /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = IntervalsIntents; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		7B77AE383004DE5800EEB50D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BE00E6E2586221C008815F1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -88,6 +132,7 @@
 				7BE00E732586221C008815F1 /* Intervals */,
 				7BE00E862586221D008815F1 /* IntervalsTests */,
 				7BE00E912586221D008815F1 /* IntervalsUITests */,
+				7B77AE3C3004DE5800EEB50D /* IntervalsIntents */,
 				7BE00E722586221C008815F1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +143,7 @@
 				7BE00E712586221C008815F1 /* Intervals.app */,
 				7BE00E832586221D008815F1 /* IntervalsTests.xctest */,
 				7BE00E8E2586221D008815F1 /* IntervalsUITests.xctest */,
+				7B77AE3B3004DE5800EEB50D /* IntervalsIntents.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,7 +158,6 @@
 				7BE00E782586221D008815F1 /* Assets.xcassets */,
 				7BE00E7D2586221D008815F1 /* Info.plist */,
 				7B55C521300410B100C3513E /* IntervalCalculator.swift */,
-				7B55C523300410BB00C3513E /* IntervalsAppIntents.swift */,
 				7BCEF80030041B6200F11ACE /* IntervalsApp.swift */,
 			);
 			path = Intervals;
@@ -140,6 +185,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7B77AE3A3004DE5800EEB50D /* IntervalsIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B77AE463004DE5800EEB50D /* Build configuration list for PBXNativeTarget "IntervalsIntents" */;
+			buildPhases = (
+				7B77AE373004DE5800EEB50D /* Sources */,
+				7B77AE383004DE5800EEB50D /* Frameworks */,
+				7B77AE393004DE5800EEB50D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7B77AE3C3004DE5800EEB50D /* IntervalsIntents */,
+			);
+			name = IntervalsIntents;
+			packageProductDependencies = (
+			);
+			productName = Extension;
+			productReference = 7B77AE3B3004DE5800EEB50D /* IntervalsIntents.appex */;
+			productType = "com.apple.product-type.extensionkit-extension";
+		};
 		7BE00E702586221C008815F1 /* Intervals */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BE00E972586221D008815F1 /* Build configuration list for PBXNativeTarget "Intervals" */;
@@ -147,10 +214,12 @@
 				7BE00E6D2586221C008815F1 /* Sources */,
 				7BE00E6E2586221C008815F1 /* Frameworks */,
 				7BE00E6F2586221C008815F1 /* Resources */,
+				7B77AE493004DE5800EEB50D /* Embed ExtensionKit Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7B77AE433004DE5800EEB50D /* PBXTargetDependency */,
 			);
 			name = Intervals;
 			productName = Intervals;
@@ -199,9 +268,12 @@
 		7BE00E692586221C008815F1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1220;
+				LastSwiftUpdateCheck = 2660;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
+					7B77AE3A3004DE5800EEB50D = {
+						CreatedOnToolsVersion = 26.6;
+					};
 					7BE00E702586221C008815F1 = {
 						CreatedOnToolsVersion = 12.2;
 					};
@@ -231,11 +303,19 @@
 				7BE00E702586221C008815F1 /* Intervals */,
 				7BE00E822586221D008815F1 /* IntervalsTests */,
 				7BE00E8D2586221D008815F1 /* IntervalsUITests */,
+				7B77AE3A3004DE5800EEB50D /* IntervalsIntents */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7B77AE393004DE5800EEB50D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BE00E6F2586221C008815F1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,13 +341,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7B77AE373004DE5800EEB50D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B77AE4A3004DFFF00EEB50D /* IntervalCalculator.swift in Sources */,
+				7B77AE4B3004E08D00EEB50D /* Date.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7BE00E6D2586221C008815F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7B8146AB25AF591A009CBB19 /* Date.swift in Sources */,
 				7B55C522300410B100C3513E /* IntervalCalculator.swift in Sources */,
-				7B55C524300410BB00C3513E /* IntervalsAppIntents.swift in Sources */,
 				7BBDD27D2587E5330007B711 /* DurationView.swift in Sources */,
 				7B509F782E1AC7D70025FF23 /* IntervalView.swift in Sources */,
 				7BCEF80130041B6200F11ACE /* IntervalsApp.swift in Sources */,
@@ -295,6 +383,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7B77AE433004DE5800EEB50D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B77AE3A3004DE5800EEB50D /* IntervalsIntents */;
+			targetProxy = 7B77AE423004DE5800EEB50D /* PBXContainerItemProxy */;
+		};
 		7BE00E852586221D008815F1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 7BE00E702586221C008815F1 /* Intervals */;
@@ -308,6 +401,74 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		7B77AE473004DE5800EEB50D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IntervalsIntents/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IntervalsIntents;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.perspective.swift.Intervals.$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		7B77AE483004DE5800EEB50D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BLU9P82V2R;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IntervalsIntents/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = IntervalsIntents;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "net.perspective.swift.Intervals.$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		7BE00E952586221D008815F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -547,6 +708,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7B77AE463004DE5800EEB50D /* Build configuration list for PBXNativeTarget "IntervalsIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B77AE473004DE5800EEB50D /* Debug */,
+				7B77AE483004DE5800EEB50D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7BE00E6C2586221C008815F1 /* Build configuration list for PBXProject "Intervals" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
